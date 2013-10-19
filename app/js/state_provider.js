@@ -2,7 +2,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
   'use strict';
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/app');
 
   $stateProvider
     .state('login', {
@@ -12,7 +12,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     })
 
     .state('app', {
-      url: '/', 
+      url: '/app', 
       templateUrl: 'main/app.html',
       controller: 'AppController'
   });
@@ -34,9 +34,11 @@ app.run(function ($rootScope, $location, AuthenticationService) {
   };
 
   $rootScope.$on('$stateChangeStart', function (ev, to, toParams, from, fromParams) {
+    console.log(from.name + ' -> ' + to.name);
     // if route requires auth and user is not logged in
     if (!routeClean($location.url()) && !AuthenticationService.isLoggedIn()) {
       // redirect back to login
+      ev.preventDefault();
       $location.path('/login');
     }
   });

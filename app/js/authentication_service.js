@@ -4,12 +4,8 @@ app.factory('AuthenticationService', function ($http, SessionService) {
 
   return {
 
-    login: function (credentials) {
-      return $http.post('/api/login', credentials).success(function (data) {
-        if (data.loggedIn) {
-          SessionService.currentUser = data.user;
-        }
-      });
+    login: function (user) {
+      SessionService.currentUser = user;
     },
 
     isLoggedIn: function () {
