@@ -7,6 +7,7 @@ This is a working example for the following post: http://arthur.gonigberg.com/20
 1. Make sure lineman and bower are installed
 
 `npm install -g lineman`
+
 `npm install -g bower`
 
 1. Install NPM packages
