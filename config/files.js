@@ -28,9 +28,8 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend('files', {
       "vendor/components/angular-ui-router/release/angular-ui-router.js",
 
       // Libs
-      "vendor/components/underscore/underscore.js",
-      "vendor/components/underscore.string/lib/underscore.string.js",
-      "vendor/js/**/*.js"
+      "vendor/js/**/*.js",
+      "vendor/components/underscore.string/lib/underscore.string.js"
     ],
 
     app: [

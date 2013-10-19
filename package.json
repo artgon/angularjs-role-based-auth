@@ -10,8 +10,7 @@
     "grunt-angular-templates": "0.3.8",
     "grunt": "~0.4.1",
     "grunt-concat-sourcemap": "~0.3.0",
-    "lineman": ">=0.11.6",
-    "underscore.string": "~2.3.3"
+    "lineman": ">=0.11.6"
   },
   "engines": {
     "node": "~>0.10.5",

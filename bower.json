@@ -15,7 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "underscore": "~1.5.2",
     "angular-ui-router": "~0.2.0",
     "underscore.string": "~2.3.3",
     "jquery": "~2.0.3"
