@@ -2,8 +2,12 @@ app.controller('LoginController', function ($scope, AuthenticationService) {
 
     'use strict';
 
-    $scope.login = function() {
-      AuthenticationService.login({name: 'arthur'});
+    $scope.loginUser = function() {
+      AuthenticationService.login({name: 'User', role: 'user'});
+    };
+
+    $scope.loginAdmin = function() {
+      AuthenticationService.login({name: 'Admin', role: 'admin'});
     };
 });
 
