@@ -10,19 +10,19 @@ This is a working example for the following post: http://arthur.gonigberg.com/20
 
 `npm install -g bower`
 
-1. Install NPM packages
+2. Install NPM packages
 
 `npm install`
 
-1. Install Bower packages
+3. Install Bower packages
 
 `bower install`
 
-1. Run Lineman
+4. Run Lineman
 
 `lineman run`
 
-1. Test in browser
+5. Test in browser
 
 Go to `localhost:8000`
 
