@@ -4,25 +4,25 @@ This is a working example for the following post: http://arthur.gonigberg.com/20
 
 ## Instructions to get it running
 
-1. Make sure lineman and bower are installed
+#### Make sure lineman and bower are installed
 
 `npm install -g lineman`
 
 `npm install -g bower`
 
-2. Install NPM packages
+#### Install NPM packages
 
 `npm install`
 
-3. Install Bower packages
+#### Install Bower packages
 
 `bower install`
 
-4. Run Lineman
+#### Run Lineman
 
 `lineman run`
 
-5. Test in browser
+#### Test in browser
 
 Go to `localhost:8000`
 
