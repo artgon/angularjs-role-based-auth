@@ -23,6 +23,7 @@ app.factory('AuthenticationService', function ($http, SessionService) {
   return {
 
     login: function (user) {
+      // this method could be used to call the API and set the user instead of taking it in the function params
       SessionService.currentUser = user;
     },
 
