@@ -11,6 +11,7 @@ app.config(function ($httpProvider) {
       if (response.status === 401) {
         //redirect them back to login page
         $location.path('/login');
+        return $q.resolve(response);
       }
       return $q.reject(response);
     };
